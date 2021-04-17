@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			#box1 {
+				width: 50px;
+				height: 50px;
+				background-color: #6cf;
+				position: absolute;
+			}
+			body {
+				height: 1000px;
+			}
+		</style>
+		<script>
+			window.onload = function(){
+				var box1 = document.getElementById("box1");
+				// box1.onmoursemove = function (event) { //box1太小，移出box1的范围就不能执行了，所以要给整个文档绑定
+				document.onmousemove = function (event) {
+					event = event || window.event;
+					// 获取鼠标坐标
+					// clientX和clientY总是相对于可见窗口
+					var left = event.clientX;
+					var top = event.clientY;
+
+					// 获取滚动条滚动的距离
+					var scrollTop = document.documentElement.scrollTop;
+					var scrollLeft = document.documentElement.scrollLeft;
+					// 设置div偏移量
+					box1.style.left = left + scrollLeft + "px";
+					box1.style.top = top + scrollTop + "px";
+				};
+			};
+
+		</script>
+	</head>
+	<body>
+		<div id="box1"></div>
+	</body>
+</html>

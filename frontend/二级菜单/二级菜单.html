@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>二级菜单</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        #my_menu {
+            width: 200px;
+            margin: 20px auto;
+        }
+        .menuSpan, a {
+            display: block;
+            height: 36px;
+            line-height: 36px; /*文本垂直居中 height=line-height*/
+        }
+        .menuSpan {
+            background-color: #000;
+            color: #ccc;
+            padding: 0 10px;
+        }
+        a {
+            background-color: #ccc;
+            color: #000;
+            text-decoration:none;
+            padding: 0 40px;
+        }
+        .arrow {
+            display: inline-block;
+            width: 20px;
+            float: left;
+            padding-left: 10px;
+        }
+        div.sdmenu div {
+            overflow: hidden;
+        }
+        div.sdmenu div.collapsed {
+            height: 36px;
+        }
+    </style>
+    <script src="tools.js"></script>
+    <script>
+        window.onload = function(){
+            var menuSpan = document.querySelectorAll(".menuSpan");
+            var arrow = document.querySelectorAll(".arrow");
+            // 定义一个变量，来保存当前打开的菜单
+            var openDiv = menuSpan[0].parentNode;
+            for(var i=0; i<menuSpan.length; i++){
+                menuSpan[i].index = i;
+                menuSpan[i].onclick = function(){
+                    var parentDiv = this.parentNode;
+
+                    toggleMenu(parentDiv);
+                    if(arrow[this.index].innerHTML === "v"){
+                        arrow[this.index].innerHTML = "&gt;";
+                    }else{
+                        arrow[this.index].innerHTML = "v";
+                    }
+
+                    // 打开菜单后，应该关闭之前打开的菜单
+                    if (openDiv != parentDiv && !hasClass(openDiv, "collapsed")){
+                        // 为了可以统一处理动画效果，将addClass改为toggleClass
+                        // addClass(openDiv,"collapsed");
+                        // 此处toggleClass不需要移除功能
+                        // toggleClass(openDiv,"collapsed");
+                        toggleMenu(openDiv);
+                    }
+
+                    // 修改打开的菜单为现在菜单
+                    openDiv = this.parentNode;
+
+                };
+            }
+
+            // 切换菜单的显示状态
+            function toggleMenu(obj){
+                // 在切换类之前，获取元素高度
+                var begin = obj.offsetHeight;
+
+                toggleClass(obj,"collapsed");
+
+
+                // 在切换类之后，获得一个高度
+                var end = obj.offsetHeight;
+
+                // 动画效果就是将高度从begin向end过度
+                obj.style.height = begin + "px";
+
+                // 执行动画，从begin向end过度
+                move(obj, "height", end, 5, function(){
+                    obj.style.height = "";
+                });
+            }
+        };
+
+    </script>
+</head>
+<body>
+    <div id="my_menu" class="sdmenu">
+        <div class="">
+            <span class="menuSpan"><span class="arrow">v</span>frontend</span>
+            <a href="https://hdkslax.github.io/frontend/">HTML</a>
+            <a href="https://hdkslax.github.io/frontend/">CSS</a>
+            <a href="https://hdkslax.github.io/frontend/">Javascript</a>
+        </div>
+        <div class="collapsed">
+            <span class="menuSpan"><span class="arrow">&gt;</span>java</span>
+            <a href="https://hdkslax.github.io/java/">Java basic</a>
+        </div>
+        <div class="collapsed">
+            <span class="menuSpan"><span class="arrow">&gt;</span>security</span>
+            <a href="https://hdkslax.github.io/security/">DOS command</a>
+        </div>
+        <div class="collapsed">
+            <span class="menuSpan"><span class="arrow">&gt;</span>Other</span>
+            <a href="https://hdkslax.github.io/security/">...</a>
+        </div>
+    </div>
+</body>
+</html>

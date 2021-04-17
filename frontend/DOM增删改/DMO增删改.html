@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			li {
+				display: inline-block;
+				margin: 20px;
+				padding: 8px;
+				border: #2b542c 2px solid;
+				background-color: #bfa;
+				color: #2b542c;
+			}
+		</style>
+		<script>
+			window.onload = function() {
+				var add = document.getElementById("add");
+				add.onclick = function(){
+					// 创建节点 = 创建元素节点(li) + 创建文本节点
+					var li = document.createElement("li");
+					var newText = document.createTextNode("墨愿");
+					// 添加节点 = 添加文本节点到元素节点 + 添加元素节点到父节点
+					li.appendChild(newText);
+					var person = document.getElementById("person");
+					person.appendChild(li);
+				};
+
+				var addBefore = document.getElementById("addBefore");
+				addBefore.onclick = function () {
+					var li = document.createElement("li");
+					var newText = document.createTextNode("墨祈");
+					li.appendChild(newText);
+					var person = document.getElementById("person");
+					var my = document.getElementById("my");
+					person.insertBefore(li,my);
+				}
+				var replace = document.getElementById("replace");
+				replace.onclick = function () {
+					var li = document.createElement("li");
+					var newText = document.createTextNode("墨祈");
+					li.appendChild(newText);
+					var person = document.getElementById("person");
+					var my = document.getElementById("my");
+					person.replaceChild(li,my);
+				}
+				var deletemy = document.getElementById("deletemy");
+				deletemy.onclick = function () {
+					var person = document.getElementById("person");
+					var my = document.getElementById("my");
+					person.removeChild(my);
+				}
+				var fixmy2mq = document.getElementById("fixmy2mq");
+				fixmy2mq.onclick = function () {
+					var my = document.getElementById("my");
+					my.innerText = "墨祈";
+				}
+
+			}
+		</script>
+	</head>
+	<body>
+	<div>
+		<ul id="person">
+			<li>卿路</li>
+			<li>奶糖</li>
+			<li>白菜</li>
+			<li>温柔</li>
+			<li id="my">墨愿</li>
+		</ul>
+		<button id="add">添加墨愿</button>
+		<button id="addBefore">添加墨祈</button>
+		<button id="replace">替换墨愿</button>
+		<button id="deletemy">删除墨愿</button>
+		<button id="fixmy2mq">修改墨愿为墨祈</button>
+
+
+	</div>
+
+	</body>
+</html>
