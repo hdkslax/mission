@@ -359,7 +359,164 @@ In certain CPUs, they are embedded on the CPU die.
 
 ![image-20210323101558670](img/image-20210323101558670.png)
 
+# 6 - Empty Word
 
+> A writer is someone for whom writing is more difficult than it is for other people.  – Thomas Mann
+
+### Non-content words
+
+- function words 虚词，没有实际意义的词
+- <font color=purple> make, is, be, do, can, that, a, of, the, and </font>
+- words that have a functional purpose within language (e.g., grammar, agreement, nominalization, etc)
+- determiners (限定词)
+- conjunctions (连词)
+- prepositions (介词)
+- pronouns (代词)
+- auxiliary verbs (助动词)
+- modals (情态动词)
+- qualifiers (限定词)
+- question words (疑问词)
+- empty words make sentences longer without adding information
+
+e.g. 
+
+- Words <font color=red>that have a</font> functional role <font color=red>make</font> sentences longer, <<font color=red>which make it</font> difficult <font color=red>for</font> readers <font color=red>to</font> read <font color=red>the</font> writing. 
+- Rewrite: functional words lengthen sentences. Long sentences are difficult to read. 
+
+e.g. 
+
+- <font color=red>An</font> over-reliance <font color=red>on</font> technology can <font color=red>be</font> mitigated <font color=red>by an</font> awareness of <font color=red>the</font> ways <font color=red>that</font> it enhances our existing ability <font color=red>to</font> work. 
+
+- Re-format:
+
+  ```
+  An over-reliance
+  	on technology
+  		can be mitigated
+  			by an awareness
+  				of the ways
+  					that it enhances our existing ability
+  						to work.
+  ```
+
+- Re-write: ~~An~~ over-reliance on technology ~~can be~~ mitigated by ~~an~~ awareness of ~~the~~ ways ~~that~~ it enhances our existing ability ~~to~~ work. 
+
+  - **Over-reliance** on technology **is mitigated** by awareness of **ways it** enhances work.
+
+- Note: Removing words was the primary edit, where “can be” was replaced with “is” to satisfy grammatical constraints.
+
+- Edit further: Awareness of how technology enhances work mitigates overly relying on technology.
+
+### Conjunctions
+
+##### e.g.
+
+###### Informal
+
+- **But** we hope to write an agreement today. 
+
+###### Formal
+
+- **However**, we look forward to writing an agreement today. 
+
+- **Nevertheless**, we look forward to completing the agreement today. 
+
+##### e.g. 
+
+###### Informal
+
+- **And** Clare is skilled in writing reports.
+
+###### Formal
+
+- **In addition**, Clare is skilled in writing reports.
+- **Furthermore**, Clare is a skillful report writer. 
+
+### Discourse Markers 话语标记
+
+语言学中，话语标记是指在句法上独立的一个单词或一个短语，它一般在句中起提示、停顿或过度的作用，大多数时候没有实际意义，如果去掉也不会影响句子意思。
+
+英语中典型的例子有 oh, well, now, then, you know, I mean, so, because, and, but, or 等等。
+
+In general, **avoid discourse markers**.
+
+Examples:
+
+- In addition…
+- Furthermore…
+- However…
+- Nevertheless…
+
+Why?
+
+- overused
+- equivalent to cliches 相当于陈词滥调
+- easy sign/trait of a poor writer
+
+Similarly, **avoid metaphors** (比喻)
+
+### Weasel Words & Hedging 模糊词
+
+Words to avoid in educational writing:
+
+- obviously
+- simply
+- just
+- basically
+- of course
+- clearly
+- just
+- everyone knows
+- However
+- So (开头So不行)
+- Easy (Alter X and Y coordinates to move the element to the new location. Easy.)
+
+###### Why is hedging bad?
+
+hedging 模糊陈述
+
+The writer:
+
+- appears uncertain
+- lacks confidence
+- feels disingenuous 虚伪的,不诚实的
+- sounds condescending 表现出优越感
+- loses the reader’s trust
+- loses credibility from readers 失去了读者的信誉
+
+
+
+# Quiz
+
+###### Remove pronouns
+
+- 原句: If **you** are unable to explain **it**, then **it** usually means **you** don’t understand the the topic **yourself**. 
+- 我: The topic can not be explained without understandings. (4.5/5)
+- 答案: Being unable to explain a topic reflects a lack of understanding of the topic.
+
+###### Rewrite the following sentence so it is concise
+
+- 原句: There are those who claim that the internet, a common and widely used online source of information, can be a positive or negative influence on students, depending on the way that it is used.
+
+- 我: Depending on the way students use the internet, the widely used online information can influence students positively or negatively. (4/5)
+
+- 答案: Concision means to write a sentence using fewer words (or concepts, since having readers remember many concepts is difficult). Sample rewrite:
+
+  The internet influences students depending on how it is used.
+
+###### removing redundancy
+
+- 原句: In the present day, Amazon is one of those corporations that has cemented itself as one of the largest technological giants of our generation, leaving no question about Amazon’s calibre as a company focused on leading the world into a better future.
+- 我: Amazon, one of the largest technological giants of our generation, focuses on leading the world into a better future. (4.5/5)
+- 答案: The following are instances of redundancy:
+  - "*in the present day*"
+  - "*one of those corporations*"
+  - "*leaving no question about*"
+  - "*leading the world*"
+  - "*into a better future*"
+  - "*cemented itself*"
+  - "*of our generation*"
+  - "*calibre as a*"
 
 # Persuasive Essays
 
