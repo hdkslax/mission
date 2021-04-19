@@ -518,6 +518,14 @@ The writer:
   - "*of our generation*"
   - "*calibre as a*"
 
+
+
+# 7 - Subjects, Verbs, Metadiscourse
+
+
+
+
+
 # Persuasive Essays
 
 ### Informative & Persuasive
