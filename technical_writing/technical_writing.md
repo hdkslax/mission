@@ -3,7 +3,9 @@
 
 > Simplicity is the ultimate sophistication.    (Leonardo da Vinci )
 
-# 1 - Simplicity
+# Words
+
+## 1 - Simplicity
 
 ### What this course involves?
 
@@ -102,7 +104,7 @@ If the ideas are clearly expressed & well organized, then the document should be
 - Rhetorical Situation
 - Genre
 
-# 2 - What is Technical Writing
+## 2 - What is Technical Writing
 
 > Impatience asks for the impossible, wants to reach the goal without the means of getting there.   — Hegel
 
@@ -152,7 +154,7 @@ Technical writing is
 
 ![image-20210323012430381](img/image-20210323012430381.png)
 
-# 3 - Rubrics 评估准则
+## 3 - Rubrics 评估准则
 
 > If the path be beautiful, let us not ask where it leads.   — Anatole France
 
@@ -212,7 +214,7 @@ DO:
 - attain flow
 - write EVERYTHING **down**
 
-# 4 - Spectrum 光谱
+## 4 - Spectrum 光谱
 
 > Put down everything that comes into your head and then you're a writer. But an author is one who can judge his own stuff's worth, without pity, and destroy most of it.   — Collette
 
@@ -275,7 +277,7 @@ An **important skill** to develop in this course: quickly explaining differences
 
 
 
-# 5 - Word Choice
+## 5 - Word Choice
 
 > Education… has produced a vast population able to read but unable to distiguish what is worth reading. 
 
@@ -359,7 +361,7 @@ In certain CPUs, they are embedded on the CPU die.
 
 ![image-20210323101558670](img/image-20210323101558670.png)
 
-# 6 - Empty Word
+## 6 - Empty Word
 
 > A writer is someone for whom writing is more difficult than it is for other people.  – Thomas Mann
 
@@ -486,7 +488,7 @@ The writer:
 
 
 
-# Quiz
+## Quiz
 
 ###### Remove pronouns
 
@@ -520,13 +522,219 @@ The writer:
 
 
 
-# 7 - Subjects, Verbs, Metadiscourse
+## 7 - Subjects, Verbs, Metadiscourse
+
+> I once told a columnist working for me that I had to rewrite his column just so I could throw it out. – pierre Berton
+
+### Subjects & Verbs
+
+- The **subject** performs the *action* of the sentence.
+- can be a simple subject, or something more complex. 
+- A **simple subject** is composed of a single pronoun, noun, or noun phrase. 
+- The **whole subject** (used by text) or **complex subject** (used by others) consists of a noun phrase and any words, phrases, or clauses that modify it. 
+
+###### e.g.
+
+**The students** despised my examples. 
+
+**The students in CMPT-376** despised my examples. 
+
+###### Questions
+
+**What are actions?**
+
+- Actions are verbs
+
+**What are characters?**
+
+- Characters are nouns
+
+**“Characters” are a misnomer. Why?**
+
+
+
+### Structure of a sentence:
+
+<font color=purple>Subject</font> <font color=green>Verb</font> <font color=blue>Object</font>. 
+
+<font color=purple>主</font> <font color=green>谓</font> <font color=blue>宾</font>. 
+
+<font color=purple>Main Character</font> <font color=green>Action</font> <font color=blue>Secondary Character</font>. 
+
+<font color=purple>The thing doing the action</font> <font color=green>Action performed</font> <font color=blue>The thing the action is applied to</font>. 
+
+**e.g.**
+
+A comparison was made of the effects of the two hashing schemes on our algorithm’s running time. 
+
+**Rewrite:**
+
+We compared the effects of the two hashing schemes on our algorithm’s running time. 
+
+**Edits made:**
+
+Abstract noun (*comparison*) changed to a verb (*compare*).
+
+- In the original sentence, the subject is the abstract noun *comparison* and the verb is *was made*.
+- In the rewrite, the subject is *we* and verb is *compared*.
+
+This can still be improved. *we* is a pronoun, need to be replaced. 
+
+**Rewrite2:**
+
+The effects of two hashing schemes on algorithm X’s running time were compared. 
+
+Two hashing schemes for algorithm X were evaluated for run time. 
+
+
+
+### Metadiscourse
+
+**e.g.**
+
+Talking (or writing) about what you are talking (or writing) about. 
+
+**Result**: a periphrastic text
+
+**e.g.**
+
+In <font color=skyblue>this paper</font>, <font color=red>we</font> <font color=orange>perform an experiment</font> that <font color=red>investigates</font> whether GPU-optimized code performs better than code running on both GPU and CPU. 
+
+**Rewrite:**
+
+~~In <font color=skyblue>this paper</font>,~~ <font color=red>We</font> ~~<font color=orange>perform an experiment</font> that~~ <font color=red>investigate</font> whether GPU-optimized code performs better than code running on both GPU and CPU. 
+
+
+
+## 8 - Nominalizations
+
+> Substitute ‘damn’ every time you’re inclined to write ‘very’; your editor will delete it and the writing will be just as it should be. – Mark Twain
+
+### Nominalizations: Verbs
+
+| Nominalization | Verb      |
+| -------------- | --------- |
+| analysis       | analyze   |
+| comparison     | compare   |
+| conclusion     | conclude  |
+| determination  | determine |
+| failure        | fail      |
+| reaction       | react     |
+| belief         | believe   |
+| suggestion     | suggest   |
+
+### Nominalization: Adjective
+
+| Nominalization | Adjective |
+| -------------- | --------- |
+| carelessness   | careless  |
+| difficulty     | difficult |
+| intensity      | intense   |
+
+
+
+### Example
+
+- His carelessness in driving caused an accident. 
+- His careless driving caused an accident. 
+
+In the programming environment, the difference of the last 2 sentences would be:
+
+- Interface -> different -> different implementation. 
+
+- Behaviour -> same -> same functionality.’
+
+**Nominalization is the subject of an empty verb (make, give, be, have, do, is, etc.):**
+
+- His careless driving caused an accident.
+- He drove carelessly and caused an accident.
+
+
+
+- The expectation of the student is to pass the course. 
+- The student expects to pass the course. 
+
+**Nominalization follows an empty verb:**
+
+- The defense counsel made an objection to the prosecution’s question. 
+- The defense counsel objected to the prosecution’s question.
+
+**One nominalization is the subject of an empty verb and a second nominalization follows it:**
+
+- A revision of the program will improve services for clients.
+- If we revise the program then we can serve the clients more efficiently.
+
+**A nominalization follows “there is” or “there are”:**
+
+- There was considerable erosion of the land from the floods.
+- The floods considerably eroded the land.
+- The land was considerably eroded by the floods. 
+
+**2 or 3 consecutive nominalizations are joined by prepositions:**
+
+- We conducted a study of the distribution of the data. 
+
+  ```
+  We conducted a study
+  	of the distribution
+  		of the data
+  ```
+
+- We studied the distribution of the data. 
+
+- We studied how the data was distributed.
+
+
+
+## Quiz
+
+###### **removing the metadiscourse**
+
+- 原句：*Our company's profits are represented by the chart on the Powerpoint slide we are showing on the projector.*
+
+- 我：Our company's profits are represented by the chart. (3/5)
+
+- 解析：The instances of metadiscourse are:
+
+  - "Our"
+  - "the chart"
+  - "the Powerpoint slide"
+  - "we"
+  - "the projector"
+
+  One possible rewrite:
+
+  *The chart shows our company's profits.*
+
+###### Remove the nominalizations from the sentence:
+
+- 原句：*The assumption that the ability to be creative has a relationship to intelligence warrants further examination.*
+- 我：The assumption that creative ability relates to intelligence warrants further examination. (2/5)
+- 答案：*The assumption that the ability to be creative has a relationship to intelligence warrants further examination.*
+
+###### Why is it recommended to remove metadiscourse? 
+
+- Metadiscourse makes sentences longer
+- Metadiscourse fails to convey impartiality
+- Metadiscourse is unimportant and irrelevant
+- Metadiscourse focuses the discussion on the communication process instead of the message being communicated
+
+###### Complex subjects are:
+
+- composed from simple subjects and modifiers
+
+###### Why do people communicate using technical terms? 
+
+- Technical terms are convenient shorthand
+- Product of the environment
 
 
 
 
 
-# Persuasive Essays
+
+
+## Persuasive Essays
 
 ### Informative & Persuasive
 
