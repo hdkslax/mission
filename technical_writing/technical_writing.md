@@ -730,11 +730,408 @@ In the programming environment, the difference of the last 2 sentences would be:
 
 
 
+# Sentences
+
+## 11 - Pause To Reflect On Words
+
+>  Everyone, left to their own devices, forms an idea about what goes on in language which is very far from the truth. – Ferdinand de Saussure  
+
+### Journals
+
+- How much time should I spend writing a journal entry?"
+- As with everything else, as little time as possible.
+- Do not spend years perfecting toward a masterpiece.  
+- Instead, spend 10 seconds writing something high quality & impressive.  
+
+### Pause To Reflect: Words  
+
+- This is not a spelling bee.
+- This is about communicating so everyone can understand us.  
 
 
 
+## 12 - Elegance Code
 
-## Persuasive Essays
+> Looking back, I think it was more difficult to see what the problems were than to solve them.  – Charles Darwin
+
+### Question
+
+- As a programmer, how would the majority of your time be spent?
+  - writing new code?
+  - updating or adding features to existing code?
+  - debugging or maintaining old code?
+  - Programmers read code
+  - A study conducted by Human Factors International found that 80% of software life-cycle costs occur during the maintenance phase.
+    - software engineering: 
+      - requirement analysis
+      - software design
+      - implementation
+      - testing
+      - deployment
+      - maintenance
+  - Don’t spend over 5 years & a billion dollars on a project, and then realizing it’s not work. 
+  - You want to know if the idea is work right away. 
+
+### How to write beautiful code?
+
+- Beautiful code is **elegant** and **simple** - it is **concise** but **clear**. 
+- Beautiful code starts with **good understanding**.
+- **have a clear idea of the solution** and the approach you are going to take.
+- The best programs are the result of an **iterative process of coding and re-coding repeatedly - almost obsessively.**
+
+### What is **concision**?
+
+Using the fewest words possible to communicate.
+
+ 
+
+## 13 - Clauses
+
+> If you don’t have time to read, you don’t have the time (or the tools) to write. – Stephen King
+
+
+
+### Independent Clauses
+
+定义：A group of words that form a valid sentence on their own. 
+
+- Clause contains a subject and a verb and expresses a complete thought. 
+
+### Dependent Clauses
+
+定义：A group of words that contain a subject and verb but does not express a complete thought. 
+
+- A clause that requires another clause to be understood.
+
+**e.g.** This is not a complete sentence!
+
+When Bob waited in the lab for the result of his experiment. 
+
+Because he was ill.
+
+- “Because” generally begins clauses that contain new information. If so, it is considered better to move it to the end of a sentence rather than start a sentence. 
+- e.g., I won’t be in class today **because** I woke up with a terrible headache. 
+- 比这么说好多了: Because I woke up with a terrible headache, I won’t be in class today. 
+
+###### Use “since” rather than “because” if the clause at the beginning of the sentence is a <u>reminder</u> rather than adding new information. 
+
+- reminder is not new information, it should be previously mentioned or known info. 
+- e.g. 以下两句都可用
+  - Since our class only meets on Monday, I won’t be in AQ 5018 at 10:30am on Saturday. 
+  - I won’t be in AQ 5018 at 10:30am on Saturday since our class only meets on Monday.
+
+
+
+## 14 - Monotony
+
+> Writing has laws of perspective, of light and shade just as painting does, or music. If you are born knowing them, fine. If not, learn them. Then rearrange the rules to suit yourself. – Truman Capote  
+
+**e.g.**
+
+Many rivers <font color=green>flow</font> <font color=purple>out to sea</font>. <font color=blue>They</font> take the most direct route. <font color=blue>They</font> <font color=green>flow</font> quickly <font color=purple>down the sides of mountains</font>. <font color=blue>They</font> <font color=green>flow</font> more slowly <font color=purple>on the flat terrain</font>.  
+
+**Write each sentence on its own line**
+
+Many rivers <font color=green>flow</font> <font color=purple>out to sea</font>. 
+
+<font color=blue>They</font> take the most direct route. 
+
+<font color=blue>They</font> <font color=green>flow</font> quickly <font color=purple>down the sides of mountains</font>. 
+
+<font color=blue>They</font> <font color=green>flow</font> more slowly <font color=purple>on the flat terrain</font>.  
+
+(Sentences with similar length contribute to monotony. )
+
+(Identical sentence structure contributes to monotony.  )
+
+**Rewrite**
+
+Many rivers flow out to sea. They take the most direct route, flowing quickly down the sides of mountains and more slowly on the flat terrain. 
+
+
+
+## Quiz
+
+###### The most significant and simplest edit is:
+
+- removing text
+
+###### Why should hedging and weasel words be avoided?
+
+- They are vague and result in uncertainty.
+
+######  When can a revised text be considered perfect?
+
+- Never - A text can **always** be improved. There is never a perfect text that is "*finished*".
+
+###### Rewrite the following:
+
+原句：To understand what causes psychiatric disorder, studies should look for more than one variable rather than adopt a strategy in which they test only one biological variable or assume that a single gene is responsible for a psychopathology.
+
+我：Many biological variables cause psychiatric disorder.  (5/10 - Incomplete information)
+
+答案：Many variables contribute to psychiatric disorders. Studies should not assume a single gene is responsible for a psychopathology.
+
+
+
+# Paragraphs
+
+## 15 - Cohesion Coherence
+
+> We write to taste life twice, in the moment and in retrospect."  – Anais Nin  
+
+### Describing Cohesion & Coherence  
+
+- choppy
+- disorganized, scattered, unstructured
+- connected
+- arranged
+- clear
+- flowing, fluid
+- stilted  
+
+Cohesion & coherence are analogous to **variable scope** in programming. Variable scope resolution is identical to coreference resolution:  
+
+- Local scope (recent mentions) = cohesion  
+- Global scope (the \big picture") = coherence  
+
+### Cohesion
+
+- within sentences
+- between sentences
+- explicitly mentioned characters or actions. 
+- between sentences, paragraphs, chapters, sections, and whole document  
+- implicitly mentioned characters, actions, or information (it, they, he, we, this, etc.)  
+- background knowledge (e.g., contextual information)  
+
+###### Cohesion example:
+
+“Abraham Lincoln was president. 
+
+Abraham Lincoln was president of the United States.”
+
+###### Coherence example:
+
+“Abraham Lincoln was president. He was born in 1962. He was president of the United States.”
+
+### Coherent
+
+- coherent is referred to as filling the “coherence gap” between sentences. 
+- the more information required to understand the connection between 2 sentences, the larger the coherence gap between the sentences. 
+- Coherence is continuous, it’s not binary (not either 100% coherent or 100% incoherent.)
+
+
+
+## 16 - Faked Cohesion
+
+The sentences rely on discourse markers like:
+
+- however
+- because
+- since 
+- firstly
+- secondly
+- lastly
+- to begin
+- in conclusion
+- next
+- second
+- thirdly
+- fourthly
+- since
+- thus
+- in summary
+- firstly
+- lastly
+- to begin
+- in other word
+- although
+
+### Faked Cohesion: Example
+
+**Because** the press is the major medium of interaction between the president and the people,how it portrays him influences his popularity. **Therefore**, it should report on the president objectively. Both reporters and the president are human, **however**, subject to error and favoritism. **Also**, people act differently in public than they do in private. **Hence**, to understand a person, it is important to know the whole person, his environment, upbringing, and education. **Indeed**, from the correspondence with his family, we can learn much about Harry S. Truman, our thirty-third president.  
+
+- Every sentence begins with a discourse marker. 
+- Text should still make sense after the discourse markers have been removed. 
+
+**How *it* portrays *him* influences *his* popularity,** the press is the major medium of interaction between the president and the people. *It* should report on the president objectively. Both reporters and the president are human, subject to error and favoritism. People act differently in public than *they* do in private. To **understand** a person, it is important to **know** the whole person, *his* environment, upbringing, and education. *We* can learn much about Harry S. Truman, *our* thirty-third president, from the correspondence with *his* family.  
+
+- Remove forward-looking anaphora from 1st sentence. 
+  - e.g. “It was expensive, but I bought the book anyway.”
+  - “It” refers to the “book”.
+- The number of pronouns (referents or referential) is too darn high. This reduces the readability of the text. Reader is required to do a lot of work the author should have done. 
+
+![image-20210419182401854](img/image-20210419182401854.png)
+
+![image-20210419182416855](img/image-20210419182416855.png)
+
+![image-20210419182424214](img/image-20210419182424214.png)
+
+![image-20210419182436963](img/image-20210419182436963.png)
+
+![image-20210419182444446](img/image-20210419182444446.png)
+
+
+
+## 17 - Active vs. Passive
+
+### Passive Voice
+
+- when subject of sentence is acted on by the verb.
+
+### Active Voice
+
+- when subject of the sentence performs the action (of the verb)  
+
+**Avoid passives!!!**
+
+**e.g.** 
+
+The collapse of a dead star into a point perhaps no larger than a marble creates (active) a black hole.  
+
+A black hole is created (passive) by the collapse of a dead star into a point perhaps no larger than a marble.  
+
+
+
+## 18 - Abstract vs. Concrete
+
+### Concrete
+
+- Concrete can be characterized by physical and tangible concepts.
+- Experienced by the senses (touch, taste, smell, hear, see).
+- Having a physical manifestation.  
+
+### Abstract
+
+- Abstract concepts cannot be experienced by the senses (touch, taste, smell, hear, see).  
+- Do not have a physical manifestation.  
+- Difficult (or impossible) to imagine (i.e., conceptualize).  
+- The more abstract concepts discussed, the more difficult for readers to understand  
+
+
+
+# Chapters & Document
+
+## 19 - The Structure Of Text 
+
+### Chapters
+
+- Chapters includes sections, subsections, parts, articles, document, text, book, essay, etc.  
+- Essentially everything above the paragraph level (i.e., two or more paragraphs).  
+
+### Structure of a Text
+
+- Introduction
+- Body
+- Conclusion/Summary  
+
+### Introduction
+
+- What goes in an Introduction?  
+  - Describes what you are going to do
+- How long should the Introduction be?  
+- What goes in a Conclusion?  
+- How long should the Conclusion be?  
+- How does the Conclusion differ from the Introduction?  
+
+### Conclusion
+
+- What did you do?
+- How did you do it?
+- What happened when you did it?
+- Did anything interesting happen?
+- What is left to be done?  
+
+
+
+### How long should each section be?  
+
+Must account for:
+
+- length of text
+- density of content in text
+- audience  
+
+
+
+- **Question** phrasing the problem  
+- **Exposition** explaining steps to solve problem  
+- **Answer** restating the problem, the approach, and succinctly providing solution  
+
+
+
+## 20 - How To Write An Introduction  
+
+![image-20210419184507671](img/image-20210419184507671.png)
+
+![image-20210419184517498](img/image-20210419184517498.png)
+
+![image-20210419184525938](img/image-20210419184525938.png)
+
+![image-20210419184534437](img/image-20210419184534437.png)
+
+![image-20210419184552874](img/image-20210419184552874.png)
+
+![image-20210419184603344](img/image-20210419184603344.png)
+
+![image-20210419184614788](img/image-20210419184614788.png)
+
+![image-20210419184619602](img/image-20210419184619602.png)
+
+![image-20210419184632754](img/image-20210419184632754.png)
+
+## 21 - **The Technical Writing Process**
+
+#### Brainstorm  
+
+- Get frst draft down as quickly as possible:  the “thinking” stage  
+- Revisions are the “non-thinking” stage, refning initial thoughts into a coherent, presentable form.  
+
+#### Organize
+
+#### Rough draft
+
+#### Revise & Edit  
+
+#### Near-final draft  
+
+#### Near-near-fnal draft...  
+
+
+
+### Typical Example: Introduction  
+
+![image-20210419185056787](img/image-20210419185056787.png)
+
+### Typical Example: Body  
+
+![image-20210419185115500](img/image-20210419185115500.png)
+
+### Typical Example: Conclusion  
+
+![image-20210419185133841](img/image-20210419185133841.png)
+
+![image-20210419185208191](img/image-20210419185208191.png)
+
+![image-20210419185213697](img/image-20210419185213697.png)
+
+![image-20210419185228389](img/image-20210419185228389.png)
+
+![image-20210419185235003](img/image-20210419185235003.png)
+
+![image-20210419185248193](img/image-20210419185248193.png)
+
+![image-20210419185257853](img/image-20210419185257853.png)
+
+![image-20210419185312483](img/image-20210419185312483.png)
+
+![image-20210419185319311](img/image-20210419185319311.png)
+
+![image-20210419185327703](img/image-20210419185327703.png)
+
+
+
+## 22 - Persuasive Essays
 
 ### Informative & Persuasive
 
@@ -800,6 +1197,150 @@ Informative documents:
     - method
     - results
     - discussion
+
+
+
+## 9 - Hyphens
+
+> When a writer tries to explain too much, [they are] out of time before [they] begin. – Isaac Bashevis Singer
+
+
+
+### Hyphens & Dashes
+
+Avoid using these!!
+
+**A more comforting answer:** there’s always a better alternative.
+
+There are what I would refer to as writing smells (i.e., Code Smells).
+
+Their existence indicates potential problems or issues by beneath the surface.
+
+###### Example of a sentence employing hyphens
+
+Even the simplest tasks <font color=lightgrey> - washing, dressing, and going to work - </font>were nearly impossible after I broke my leg. 
+
+Even the simplest tasks <font color=lightgrey> (washing, dressing, and going to work) </font>were nearly impossible after I broke my leg. 
+
+Even the <font color=red>simplest</font> tasks were nearly impossible after I broke my leg.
+
+-  What is a simple task? Hedging.
+
+Washing, dressing, and going to work were nearly impossible after I broke my leg. 
+
+- explicitly state the tasks the person was unable to perform.
+
+
+
+### Colons(:) & Semicolons(;)
+
+###### Example of a sentence employing semicolons:
+
+I bought shiny, ripe apples; small, sweet, juicy grapes; and firm pears. 
+
+- They use semicolons to list three items that would be confusing to separate with commas. 
+- semi-colon is level up of comma. 
+
+**If you want to make it clear how many items are in a list, then use a list!**
+
+I bought:
+
+- shiny, ripe apples
+- small, sweet, juicy grapes
+- firm pears
+
+*I bought eggs; milk; bread; and juice.*
+
+This is not a common way to list items.
+
+## 10 - Cohesion Discourse Markers - 书面和口语的交流
+
+> The limits of my language means the limits of my word.  – Ludwig Wittgenstein
+
+### However, 
+
+I prefer to work at night since it is quiet and without interruption. It allows for better focus with more work completed. **However,** I am tried in the morning. 
+
+- *However,* indicate a contrast with previous sentence, but here’s no contrast meaning.
+
+I prefer to work at night since it is quiet and without interruption. It allows for better focus with more work completed. **Due to working at night I go to bed late, result in being** tried in the morning. 
+
+### Cohesion & However,
+
+O’Hara’s paper is a comprehensive survey of technical communication from past to present. **However,** the paper was poorly written written and requires many revisions before being accepted for publication. 
+
+-  This is not a *however* moment (no contrast).
+
+**分析：**
+
+- **First of all,** O’Hara’s paper is a comprehensive survey of technical communication from past to present. 
+- **Second,** O’Hara’s paper had grammar issues. 
+- **Thirdly,** the paper had massive redundancy and duplication. 
+- **Finally,** the paper was inconsistent with its formality.
+
+**Discourse marker example: ** first, next, lastly, finally, …
+
+**Rewrite:**
+
+The final issue with the quality of the paper concerns the inconsistent tone of formality. The text oscillated between a colloquial, informal style and a rigid, formal one. 
+
+**Rewrite:**
+
+The inconsistent tone of formality affected the quality of the paper, oscillating between a colloquial, informal style and a rigid, formal one. 
+
+### Writing Tips
+
+###### Delete the word “that”
+
+- 90% of time the word “that” can be removed from your writing and it will instantly make your sentence stronger. 
+- e.g., You believe that I’m lying, but I’m not.  –> You believe I’m lying, but I’m not. 
+
+###### Delete the word “I think”
+
+- “I think” adds nothing. Remove it to strengthen your point. 
+- e.g., I think this is a good sentence. –> This is a good sentence. 
+
+###### -ing
+
+- Avoid words that end in “-ing”
+- In most cases, the “-ing” softens your word and adds no value. Your writing will read better if you avoid it. 
+- e.g., The experiences we’re seeking end up being underwhelming and even disappointing, –> The experiences we seek often underwhelm and disappoint.
+
+###### Concision
+
+- short sentences
+- short paragraphs
+  - Most sentences can be cut in half. Don’t be afraid to have two or three word sentence. 
+  - keep paragraphs to less than three sentences. 
+  - white space is your reader’s friend. 
+
+###### Shrink Opening Sentence
+
+- Make it compelling, but keep it short and conversational. 
+- e.g., This is a post that’s going to help you become a better writer.  –> I can help you. 
+
+
+
+## Quiz
+
+###### By convention, what is the maximum number of "*and*"s that should be used in a sentence?
+
+1
+
+###### **discourse markers**
+
+Examples of **discourse markers** are *however*, *in other words*, *firstly*, *on the other hand*, *in conclusion*, etc.
+
+Why should **discourse markers** be avoided? (choose all that apply)
+
+- are redundant
+-  misused
+- overused
+
+###### What type of punctuation can be used instead of a dash? (check all that apply)
+
+- parentheses
+- comma
 
 ### Persuasive Essay
 
@@ -901,6 +1442,8 @@ To be persuasive, choose:
 Brief, preliminary, unsolicited proposals targeting external organizations so as to *gauge interest in your idea* to determine if you should take the next step (i.e., develop a full, formal proposal for funding).  
 
 software developers would propose a feature to a multi-disciplinary team before starting the coding. 
+
+
 
 ### Parts of a Proposal
 
