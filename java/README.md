@@ -64,4 +64,4 @@
 
 #### OOP的其他关键字
 
-<a href="java/[java]static.html">[java]static</a>
+<a href="java/[java]static.md">[java]static</a>

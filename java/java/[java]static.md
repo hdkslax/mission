@@ -23,4 +23,124 @@
   - 优先于对象存在  
   - 修饰的成员，被所有对象所共享  
   - 访问权限允许时，可不创建对象，直接被类调用
-  - 
+
+### 例
+
+```java
+class Circle {
+    private double radius;
+    public static String name = "这是一个圆";
+    public static String getName() {
+        return name;
+    }
+    public Circle(double radius) {
+        this.radius = radius;
+    }
+    public double findArea() {
+        return Math.PI * radius * radius;
+    }
+    public void display() {
+        System.out.println("name:" + name + "radius:" + radius);
+    }
+}
+
+public class StaticTest {
+    public static void main(String[] args) {
+        Circle c1 = new Circle(2.0);
+        Circle c2 = new Circle(3.0);
+        c1.display();
+        c2.display();
+    }
+}
+```
+
+
+
+### 类变量(class Variable)  
+
+类变量（类属性）由该类的所有实例共享。
+
+![image-20210503205502674](img/image-20210503205502674.png)
+
+```java
+public class Person {
+    
+    private int id;
+    public static int total = 0;
+    
+    public Person() {
+        total++;
+        id = total;
+    }
+}
+
+public class StaticDemo {
+    public static void main(String args[]) {
+        Person.total = 100; // 不用创建对象就可以访问静态成员
+        //访问方式：类名.类属性， 类名.类方法
+        System.out.println(Person.total);
+        Person c = new Person();
+        System.out.println(c.total); //输出101
+    }
+}
+```
+
+
+
+### 类变量 vs 实例变量内存解析  
+
+![image-20210503205720884](img/image-20210503205720884.png)![image-20210503205732730](img/image-20210503205732730.png)
+
+
+
+### 类方法(class method)  
+
+- 没有对象的实例时，可以用类名.方法名()的形式访问由static修饰的类方法。  
+- 在static方法内部只能访问类的static修饰的属性或方法， 不能访问类的非static的结构。  
+
+```java
+class Person {
+    private int id;
+    private static int total = 0;
+    public static int getTotalPerson() {
+        //id++; //非法
+        return total;}
+    public Person() {
+        total++;
+        id = total;
+    }
+}
+
+public class PersonTest {
+    public static void main(String[] args) {
+        System.out.println("Number of total is " + Person.getTotalPerson()); //0
+        //没有创建对象也可以访问静态方法
+        Person p1 = new Person();
+        System.out.println( "Number of total is "+ Person.getTotalPerson()); //1
+    }
+}
+```
+
+- 因为不需要实例就可以访问static方法，因此static方法内部不能有this。 (也不能有super ? YES!)  
+- static修饰的方法不能被重写  
+
+```java
+class Person {
+    private int id;
+    private static int total = 0;
+    public static void setTotalPerson(int total){
+        this.total=total; //非法，在static方法中不能有this，也不能有super
+    }
+    
+    public Person() {
+        total++;
+        id = total;
+    }
+}
+public class PersonTest {
+    public static void main(String[] args) {
+        Person.setTotalPerson(3);
+    }
+}
+```
+
