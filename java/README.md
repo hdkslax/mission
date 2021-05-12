@@ -65,3 +65,77 @@
 #### OOP的其他关键字
 
 <a href="java/[java]static.md">[java]static</a>
+
+<a href="java/[java]Singleton单例设计模式.md">[java]Singleton单例设计模式</a>
+
+<a href="java/[java]理解main方法的语法.md">[java]理解main方法的语法</a>
+
+<a href="java/[java]代码块.md">[java]代码块</a>
+
+<a href="java/[java]final.md">[java]final</a>
+
+<a href="java/[java]抽象类与抽象方法.md">[java]抽象类与抽象方法</a>
+
+<a href="java/[java]模板方法设计模式.md">[java]模板方法设计模式</a>
+
+
+
+
+
+
+
+### 常用设计模式
+
+设计模式是在大亮的实践中总结和理论化之后的代码结构、编程风格、以及解决问题的思考方式。
+
+#### 创建型模式 (5种)
+
+工厂方法模式
+
+抽象工厂模式
+
+<a href="java/[java]Singleton单例设计模式.md">单例模式</a>
+
+建造者模式
+
+原型模式
+
+#### 结构型模式 (7种)
+
+适配器模式
+
+装饰器模式
+
+代理模式
+
+外观模式
+
+桥接模式
+
+组合模式
+
+享元模式
+
+#### 行为型模式 (11种)
+
+策略模式
+
+模板方法模式
+
+观察者模式
+
+迭代器模式
+
+责任链模式
+
+命令模式
+
+备忘录模式
+
+状态模式
+
+访问者模式
+
+中介者模式
+
+解释器模式

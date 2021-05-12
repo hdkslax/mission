@@ -2,7 +2,7 @@
  - 函数也是个对象。
  - 函数中可以封装一些功能（代码），在需要是可以执行这些功能（代码）
  - 使用typeof检查一个函数对象时，会返回function
- 
+
 # 创建一个函数对象
 ### 1. 将要封装的代码以字符串的形式传递给构造函数
 （在实际开发中很少使用构造函数来创建函数对象）
@@ -66,11 +66,12 @@ sum(1,2);
 实参可以是任意类型，也可以是一个对象
  - 当参数过多时，可以将参数封装到一个对象中，然后通过对象传递
  - 参数也可以是函数
+
  	```javascript
  	var o = "Hello";
  	function sayHello(o){
-		console.log(o);
-	}
+ 		console.log(o);
+ 	}
  	function fun(a) {
  		console.log("a = " + a);
  	}
@@ -78,15 +79,15 @@ sum(1,2);
  	```
  	输出结果为：
  	```javascript
-	a = function sayHello(o){
-				console.log(o);
-			}
-	```
-	这里还可以这么写：
-	```javascript
+ 	a = function sayHello(o){
+ 				console.log(o);
+ 			}
+ 	```
+ 	这里还可以这么写：
+ 	```javascript
  	function sayHello(o){
-		a(“Hello”)
-	}
+ 		a(“Hello”)
+ 	}
  	function fun(a) {
  		console.log("a = " + a);
  	}
@@ -105,3 +106,20 @@ funciton fun3(){
 	}
 }
 ```
+
+
+
+### 函数里套函数
+
+```js
+var b1 = {
+    b3: function () {
+        return function(){
+            return 'qwertyuiop';
+        }
+    }
+}
+
+console.log(b1.b3()()); // 'qwertyuiop'
+```
+
