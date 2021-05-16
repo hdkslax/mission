@@ -78,7 +78,11 @@
 
 <a href="java/[java]模板方法设计模式.md">[java]模板方法设计模式</a>
 
+<a href="java/[java]接口.md">[java]接口</a>
 
+<a href="java/[java]代理模式.md">[java]代理模式</a>
+
+<a href="java/[java]工厂设计模式.md">[java]工厂设计模式</a>
 
 
 
@@ -106,7 +110,7 @@
 
 装饰器模式
 
-代理模式
+<a href="java/[java]代理模式.md">[java]代理模式</a>
 
 外观模式
 
