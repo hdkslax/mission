@@ -32,6 +32,7 @@ WorkerManager::WorkerManager(){
 	int num = this->get_empnum();
 	this->empNum = num;
 	this->EmpArray = new Worker*[this->empNum];
+	cout << "这里的大小是：" << sizeof(this->EmpArray) / sizeof(this->EmpArray[0]) << endl;
 	
 	this->init_emp(); // 将文件中的数据，存到数组中
 
