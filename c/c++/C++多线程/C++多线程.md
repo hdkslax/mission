@@ -97,3 +97,168 @@
 
 - 写初始函数
 
+  ```c++
+  #include <iostream>
+  #include <thread>
+  
+  using namespace std;
+  
+  // 初始函数
+  void myPrint(){
+      cout << "This is a child thread" << endl;
+  }
+  
+  int main(){
+  	return 0;
+  }
+  ```
+
+#### 3.2 创建thread
+
+- `thread`是标准库std中的类
+- `thread mytobj(myprint);` 创建了线程，线程执行的起点/入口是`myPrint`函数。此句话执行，则`myPrint()`开始执行
+
+```c++
+#include <iostream>
+#include <thread>
+
+using namespace std;
+
+void myPrint(){
+    cout << "This is a child thread" << endl;
+}
+
+int main(){
+	thread mytobj(myprint);
+    mytobj.join();
+    
+    cout << "This is the main thread" << endl;
+    
+    return 0;
+}
+```
+
+注意：此程序中有两个线程在跑，所以可以同时干两件事，即使一条线程被堵了，另一条线程仍然可以执行。
+
+#### 3.3 线程join()
+
+- join 加入，汇合。
+- 作用：阻塞主线程，让主线程等待子线程执行完毕，然后子线程和主线程汇合，然后主线程再往下走。
+
+#### 3.4 detach()
+
+- 传统多线程程序，主线程要等待子线程执行完毕，自己最后退出；
+
+- detach 分离, 主线程不和子线程汇合了，各自执行，主线程不必等待子线程执行结束，子线程可以在主线程结束之后继续执行，并不影响子线程
+
+- 一旦detach之后，与这个主线程相关的thread对象就会失去与这个主线程的关联，此时子线程就会驻留在后台运行。这个子线程就相当于被C++运行时库接管，当这个子线程执行完毕，由运行时库负责清理该线程相关的资源（守护线程）。
+
+- 一旦detach，不能再用join。否则系统会报告异常。
+
+  ```c++
+  #include <iostream>
+  #include <thread>
+  
+  using namespace std;
+  
+  void myPrint(){
+      cout << "This is a child thread" << endl;
+  }
+  
+  int main(){
+  	thread mytobj(myprint);
+      mytobj.detach();
+      
+      cout << "This is the main thread" << endl;
+      return 0;
+  }
+  ```
+
+#### 3.5 joinable()
+
+- 判断是否可以成功使用join()或者detach()
+- 返回true或false
+- true - 可以join或detach
+- false - 不能join或detach
+
+#### 3.6 其他创建线程的手法
+
+###### 类 - 必须是可调用对象
+
+下例中，主线程结束了，子线程中的TA对象还存在，因为ta实际上是被复制到子线程去的。
+
+执行完主线程后，ta会被销毁，但是所复制的TA对象依旧存在。
+
+所以，只要TA类中没有引用，没有指针，那么就不会产生问题
+
+```c++
+class TA {
+    public: 
+    void operator()(){ // 不能带参数；重写小括号()
+        cout << "This is a child thread" << endl;
+    }
+};
+
+int main(){
+    TA ta; // 此处ta是一个可调用对象
+    thread mytobj(ta);
+    mytobj join();
+    
+    cout << "This is the main thread" << endl;
+    
+    return 0;
+}
+```
+
+下例中的成员变量是引用，主线程中的变量被释放后，子线程中会报错
+
+```c++
+#include <iostream>
+#include <thread>
+ 
+ using namespace std;
+ 
+class TA {
+    public: 
+    int &m_i;
+    TA(int &i):m_i(i){
+        cout << "TA构造函数被执行" << endl;
+    }
+    
+    TA(const TA &ta):m_i(ta.m_i){
+     	cout <<"TA拷贝构造函数被执行" << endl;   
+    }
+    
+    ~TA(){
+        cout << "TA析构函数被执行" << endl;
+    }
+    
+    void operator()(){ // 不能带参数；重写小括号()
+        cout << "This is a child thread" << endl;
+        cout << "m_i 的值为：" << m_i << endl;
+    }
+};
+
+int main(){
+    int myi = 6;
+    TA ta(myi); // 此处ta是一个可调用对象
+    thread mytobj(ta);
+    mytobj.join();
+    
+    cout << "This is the main thread" << endl;
+    
+    return 0;
+}
+
+/*
+执行结果：
+TA构造函数被执行
+TA拷贝构造函数被执行
+This is a child thread
+m_i 的值为：6
+TA析构函数被执行
+This is the main thread
+TA析构函数被执行
+*/
+```
+
