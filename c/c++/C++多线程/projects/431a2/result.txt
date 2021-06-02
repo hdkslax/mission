@@ -1,0 +1,12 @@
+./ellipse_area
+Number of points : 1000000000
+Major Radius : 2
+Minor Radius : 1
+Random Seed : 1
+thread_id, points_generated, ellipse_points, time_taken
+1, 1000000000, 785397822, 10.141
+Total points generated : 1000000000
+Total points in ellipse : 785397822
+Result : 6.283182576
+Time taken (in seconds) : 10.141
+

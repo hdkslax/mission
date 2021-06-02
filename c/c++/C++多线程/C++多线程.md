@@ -256,9 +256,11 @@ TA构造函数被执行
 TA拷贝构造函数被执行
 This is a child thread
 m_i 的值为：6
-TA析构函数被执行
+TA析构函数被执行 （这个释放是线程中复制进去的那个TA对象被释放）
 This is the main thread
-TA析构函数被执行
+TA析构函数被执行 （这个是ta对象被释放）
 */
 ```
+
+###### 用lambda表达式
 
